@@ -9,7 +9,7 @@ Thank you for your interest in contributing to `snv-effect-prediction-alzheimers
 2. **Clone your fork**: Clone your forked repository to your local development environment.
 
     ```bash
-    git clone https://github.com/snv-effect-prediction-alzheimers/snv-effect-prediction-alzheimers.git
+    git clone https://github.com/hackbio-ca/snv-effect-prediction-alzheimers.git
     ```
 
 3. **Create a new branch**: Create a new branch for your changes. Use a descriptive branch name that indicates the work you are doing.
