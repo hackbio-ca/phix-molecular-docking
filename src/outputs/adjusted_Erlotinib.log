@@ -1,0 +1,110 @@
+2024-09-29 01:58:50,039 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 01:58:50,039 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 01:58:50,040 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 01:58:50,040 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 01:58:50,040 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 01:58:50,064 INFO:main.py:765:main_driver:Loading molecule: uploads/Erlotinib.pdb
+2024-09-29 01:58:50,065 ERROR:pdb.py:2584:read_pdb:Error parsing line: '\ufeffCOMPN'
+2024-09-29 01:58:50,065 ERROR:pdb.py:2585:read_pdb:<﻿COMPND    176870>
+2024-09-29 01:58:50,065 ERROR:pdb.py:2586:read_pdb:Truncating remaining errors for record type:﻿COMPN
+2024-09-29 01:58:50,065 WARNING:io.py:467:get_molecule:Warning: uploads/Erlotinib.pdb is a non-standard PDB file.
+
+2024-09-29 01:58:50,065 ERROR:io.py:468:get_molecule:['\ufeffCOMPN']
+2024-09-29 01:58:50,065 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 01:58:50,066 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for UNL.  Parsing as new residue.
+2024-09-29 01:58:50,066 INFO:main.py:408:setup_molecule:Created biomolecule object with 1 residues and 4 atoms.
+2024-09-29 01:58:50,066 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 01:58:50,066 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 01:58:50,071 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 01:58:50,071 CRITICAL:main.py:800:main_driver:No biomolecule heavy atoms found and no ligand present. Unable to proceed.  You may also see this message if PDB2PQR does not have parameters for any residue in your biomolecule.
+2024-09-29 01:58:50,071 CRITICAL:main.py:801:main_driver:Giving up.
+2024-09-29 01:59:53,485 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 01:59:53,485 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 01:59:53,485 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 01:59:53,485 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 01:59:53,486 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 01:59:53,515 INFO:main.py:765:main_driver:Loading molecule: uploads/Erlotinib.pdb
+2024-09-29 01:59:53,515 ERROR:pdb.py:2584:read_pdb:Error parsing line: '\ufeffCOMPN'
+2024-09-29 01:59:53,515 ERROR:pdb.py:2585:read_pdb:<﻿COMPND    176870>
+2024-09-29 01:59:53,515 ERROR:pdb.py:2586:read_pdb:Truncating remaining errors for record type:﻿COMPN
+2024-09-29 01:59:53,516 WARNING:io.py:467:get_molecule:Warning: uploads/Erlotinib.pdb is a non-standard PDB file.
+
+2024-09-29 01:59:53,516 ERROR:io.py:468:get_molecule:['\ufeffCOMPN']
+2024-09-29 01:59:53,516 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 01:59:53,516 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for UNL.  Parsing as new residue.
+2024-09-29 01:59:53,516 INFO:main.py:408:setup_molecule:Created biomolecule object with 1 residues and 4 atoms.
+2024-09-29 01:59:53,516 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 01:59:53,516 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 01:59:53,521 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 01:59:53,522 CRITICAL:main.py:800:main_driver:No biomolecule heavy atoms found and no ligand present. Unable to proceed.  You may also see this message if PDB2PQR does not have parameters for any residue in your biomolecule.
+2024-09-29 01:59:53,522 CRITICAL:main.py:801:main_driver:Giving up.
+2024-09-29 02:02:10,404 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 02:02:10,404 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 02:02:10,405 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 02:02:10,405 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 02:02:10,405 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 02:02:10,434 INFO:main.py:765:main_driver:Loading molecule: uploads/Erlotinib.pdb
+2024-09-29 02:02:10,434 ERROR:pdb.py:2584:read_pdb:Error parsing line: '\ufeffCOMPN'
+2024-09-29 02:02:10,435 ERROR:pdb.py:2585:read_pdb:<﻿COMPND    176870>
+2024-09-29 02:02:10,435 ERROR:pdb.py:2586:read_pdb:Truncating remaining errors for record type:﻿COMPN
+2024-09-29 02:02:10,435 WARNING:io.py:467:get_molecule:Warning: uploads/Erlotinib.pdb is a non-standard PDB file.
+
+2024-09-29 02:02:10,435 ERROR:io.py:468:get_molecule:['\ufeffCOMPN']
+2024-09-29 02:02:10,435 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 02:02:10,435 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for UNL.  Parsing as new residue.
+2024-09-29 02:02:10,435 INFO:main.py:408:setup_molecule:Created biomolecule object with 1 residues and 4 atoms.
+2024-09-29 02:02:10,435 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 02:02:10,436 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 02:02:10,441 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 02:02:10,442 WARNING:main.py:456:is_repairable:No heavy atoms found but a ligand is present. Proceeding with caution.
+2024-09-29 02:02:10,442 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 02:02:10,442 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 02:02:10,442 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 02:02:10,442 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 02:02:10,442 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 02:02:10,442 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 02:02:10,442 INFO:main.py:670:non_trivial:Processing ligand.
+2024-09-29 02:02:10,442 WARNING:main.py:671:non_trivial:Using ZAP9 forcefield for ligand radii.
+2024-09-29 02:02:10,442 WARNING:main.py:691:non_trivial:Can't find HETATM UNL 1 O in MOL2 file
+2024-09-29 02:02:10,442 WARNING:main.py:691:non_trivial:Can't find HETATM UNL 1 N in MOL2 file
+2024-09-29 02:02:10,442 WARNING:main.py:691:non_trivial:Can't find HETATM UNL 1 C in MOL2 file
+2024-09-29 02:02:10,442 WARNING:main.py:691:non_trivial:Can't find HETATM UNL 1 H in MOL2 file
+2024-09-29 02:02:10,442 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 02:02:10,442 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 02:02:10,442 WARNING:main.py:311:print_pqr:Ignoring 976 header lines in output.
+2024-09-29 02:02:10,442 WARNING:main.py:315:print_pqr:Ignoring 8 missing lines in output.
+2024-09-29 02:02:18,602 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 02:02:18,602 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 02:02:18,602 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 02:02:18,602 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 02:02:18,603 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 02:02:18,629 INFO:main.py:765:main_driver:Loading molecule: uploads/Erlotinib.pdb
+2024-09-29 02:02:18,629 ERROR:pdb.py:2584:read_pdb:Error parsing line: '\ufeffCOMPN'
+2024-09-29 02:02:18,629 ERROR:pdb.py:2585:read_pdb:<﻿COMPND    176870>
+2024-09-29 02:02:18,629 ERROR:pdb.py:2586:read_pdb:Truncating remaining errors for record type:﻿COMPN
+2024-09-29 02:02:18,629 WARNING:io.py:467:get_molecule:Warning: uploads/Erlotinib.pdb is a non-standard PDB file.
+
+2024-09-29 02:02:18,629 ERROR:io.py:468:get_molecule:['\ufeffCOMPN']
+2024-09-29 02:02:18,629 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 02:02:18,630 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for UNL.  Parsing as new residue.
+2024-09-29 02:02:18,630 INFO:main.py:408:setup_molecule:Created biomolecule object with 1 residues and 4 atoms.
+2024-09-29 02:02:18,630 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 02:02:18,630 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 02:02:18,635 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 02:02:18,636 WARNING:main.py:456:is_repairable:No heavy atoms found but a ligand is present. Proceeding with caution.
+2024-09-29 02:02:18,636 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 02:02:18,636 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 02:02:18,636 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 02:02:18,636 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 02:02:18,636 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 02:02:18,636 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 02:02:18,636 INFO:main.py:670:non_trivial:Processing ligand.
+2024-09-29 02:02:18,636 WARNING:main.py:671:non_trivial:Using ZAP9 forcefield for ligand radii.
+2024-09-29 02:02:18,636 WARNING:main.py:691:non_trivial:Can't find HETATM UNL 1 O in MOL2 file
+2024-09-29 02:02:18,636 WARNING:main.py:691:non_trivial:Can't find HETATM UNL 1 N in MOL2 file
+2024-09-29 02:02:18,636 WARNING:main.py:691:non_trivial:Can't find HETATM UNL 1 C in MOL2 file
+2024-09-29 02:02:18,636 WARNING:main.py:691:non_trivial:Can't find HETATM UNL 1 H in MOL2 file
+2024-09-29 02:02:18,636 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 02:02:18,636 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 02:02:18,636 WARNING:main.py:311:print_pqr:Ignoring 976 header lines in output.
+2024-09-29 02:02:18,636 WARNING:main.py:315:print_pqr:Ignoring 8 missing lines in output.
