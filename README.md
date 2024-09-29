@@ -5,13 +5,15 @@ A pH-Adaptive Protein-Ligand Simulation Tool to Enhance Molecular Docking Accura
 
 ## Abstract
 
-Molecular docking, which predicts how a protein and a small molecule (ligand) interact, is a cornerstone of drug discovery and biochemical research. However, most current docking tools do not account for the impact of varying pH levels, which can significantly alter the charge and structure of proteins and ligands. These changes influence the binding accuracy, leading to inconsistent results and limiting the effectiveness of such models in real-world applications. This problem is critical because precise protein-ligand interactions are essential for understanding drug efficacy and biochemical mechanisms.
+Molecular docking, which predicts how a protein and a small molecule (ligand) interact, is a cornerstone of drug discovery and biochemical research.^1 However, most current docking tools do not account for the impact of varying pH levels, which can significantly alter the charge and structure of proteins and ligands. These changes influence the binding accuracy, leading to inconsistent results and limiting the effectiveness of such models in real-world applications. This problem is critical because precise protein-ligand interactions are essential for understanding drug efficacy and biochemical mechanisms.
 
 To address this limitation, we introduce pHix, a novel tool designed to improve docking accuracy by dynamically adjusting protonation states of proteins and ligands based on their experimental or desired pH environments. With a user-defined pH, pHix asks users to upload PDB files for structure of proteins and their relavant ligands, and then adjusts them to ensure molecular docking simulations reflect those biologically relevant pH conditions. This leads to more accurate presentation/prediction of binding interactions and improves the overall reliability of docking models in diverse pH-sensitive systems.
 
 Thus, by bridging the gap between experimental structural data and desired simulation conditions, pHix offers a transformative approach that allows researchers to create more accurate and context-sensitive models, paving the way for enhanced future drug discovery and deeper insights into biochemical processes.
 
 ## Refrences
+
+1- Monika, G., Punam, G., Sarbjot, S., & D, G. G. (2010). AN OVERVIEW ON MOLECULAR DOCKING. International Journal of Drug Development and Research, 2(2). https://www.ijddr.in/abstract/an-overview-on-molecular-docking-5365.html
 
 ## Installation
 
