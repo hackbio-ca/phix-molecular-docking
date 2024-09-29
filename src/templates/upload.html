@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Enzyme and Substrate PDB Files</title>
+    <script src="https://unpkg.com/ngl@2.0.0-dev.34/dist/ngl.js"></script>
 </head>
 <body>
     <h1>Upload Enzyme and Substrate PDB Files</h1>
@@ -16,5 +17,21 @@
         <input type="text" name="ph" id="ph" required><br><br>
         <input type="submit" value="Submit">
     </form>
+
+    <h2>Visualize the Results</h2>
+    <div id="viewport" style="width: 600px; height: 400px;"></div>
+
+    <script>
+        function loadStructure(url) {
+            var stage = new NGL.Stage("viewport");
+            stage.loadFile(url).then(function (component) {
+                component.addRepresentation("cartoon");
+                component.autoView();
+            });
+        }
+
+        // Example: Load the modified enzyme structure
+        loadStructure('/path/to/adjusted_enzyme.pqr');  // Dynamically change based on the uploaded file
+    </script>
 </body>
 </html>
