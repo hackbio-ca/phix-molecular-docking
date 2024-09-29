@@ -31,13 +31,17 @@ def upload_file():
         substrate_file.save(substrate_path)
 
         # Run Propka and adjust protonation
-        enzyme_output, substrate_output = adjust_protonation(enzyme_path, substrate_path, ph)
+        enzyme_pqr, substrate_pqr = adjust_protonation(enzyme_path, substrate_path, ph)
 
-        # Create a ZIP file with both outputs
+        # Create a ZIP file with both PQR and PDB outputs
         zip_path = os.path.join(OUTPUT_FOLDER, 'adjusted_files.zip')
         with zipfile.ZipFile(zip_path, 'w') as zipf:
-            zipf.write(enzyme_output, os.path.basename(enzyme_output))
-            zipf.write(substrate_output, os.path.basename(substrate_output))
+            # Add PQR files to the ZIP
+            zipf.write(enzyme_pqr, os.path.basename(enzyme_pqr))
+            zipf.write(substrate_pqr, os.path.basename(substrate_pqr))
+            # Optionally add original PDB files too
+            zipf.write(enzyme_path, os.path.basename(enzyme_path))
+            zipf.write(substrate_path, os.path.basename(substrate_path))
 
         # Send the ZIP file to the user
         if os.path.exists(zip_path):
