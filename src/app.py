@@ -36,20 +36,43 @@ def upload_file():
         enzyme_output = os.path.join(OUTPUT_FOLDER, 'adjusted_' + enzyme_file.filename)
         return send_file(enzyme_output, as_attachment=True)
 
+
+
+
 def adjust_protonation(enzyme_pdb, substrate_pdb, ph):
-    # Run propka on both enzyme and substrate
-    subprocess.run(['propka3', enzyme_pdb], check=True)
-    subprocess.run(['propka3', substrate_pdb], check=True)
+    # Define output file paths for enzyme and substrate (as .pqr files)
+    enzyme_output = os.path.join(OUTPUT_FOLDER, 'adjusted_' + os.path.basename(enzyme_pdb).replace('.pdb', '.pqr'))
+    substrate_output = os.path.join(OUTPUT_FOLDER, 'adjusted_' + os.path.basename(substrate_pdb).replace('.pdb', '.pqr'))
 
-    # Use PDB2PQR or another tool to adjust protonation state based on pH
-    # Assuming the output goes to OUTPUT_FOLDER
-    enzyme_output = os.path.join(OUTPUT_FOLDER, 'adjusted_' + os.path.basename(enzyme_pdb))
-    substrate_output = os.path.join(OUTPUT_FOLDER, 'adjusted_' + os.path.basename(substrate_pdb))
+    try:
+        # Step 1: Run Propka3 on the enzyme PDB file to generate the .pka file
+        print(f"Running Propka3 on enzyme: {enzyme_pdb}")
+        subprocess.run(['propka3', enzyme_pdb], check=True)
 
-    # Adjust protonation using PDB2PQR or another tool
-    # Example command (adjust as needed for your setup):
-    subprocess.run(['pdb2pqr', '--ph-calc-method=propka', '--with-ph', ph, enzyme_pdb, enzyme_output], check=True)
-    subprocess.run(['pdb2pqr', '--ph-calc-method=propka', '--with-ph', ph, substrate_pdb, substrate_output], check=True)
+        # Step 2: Run pdb2pqr on the enzyme PDB file to adjust protonation based on pH
+        print(f"Running pdb2pqr on enzyme to adjust for pH {ph}: {enzyme_pdb}")
+        subprocess.run(['pdb2pqr', '--with-ph', ph, enzyme_pdb, enzyme_output], check=True)
+        print(f"Enzyme adjusted output saved to: {enzyme_output}")
+
+        # Step 3: Run Propka3 on the substrate PDB file to generate the .pka file
+        print(f"Running Propka3 on substrate: {substrate_pdb}")
+        subprocess.run(['propka3', substrate_pdb], check=True)
+
+        # Step 4: Run pdb2pqr on the substrate PDB file to adjust protonation based on pH
+        print(f"Running pdb2pqr on substrate to adjust for pH {ph}: {substrate_pdb}")
+        subprocess.run(['pdb2pqr', '--with-ph', ph, substrate_pdb, substrate_output], check=True)
+        print(f"Substrate adjusted output saved to: {substrate_output}")
+
+    except subprocess.CalledProcessError as e:
+        print(f"Error during Propka3 or pdb2pqr execution: {e.stderr}")
+        raise
+
+    return enzyme_output, substrate_output  # Return the paths to the adjusted PQR files
+
+
+
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
