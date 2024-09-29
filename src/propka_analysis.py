@@ -32,7 +32,7 @@ def run_propka(pdb_file, output_dir):
                 os.rename(generated_pka_file, output_file)
                 print(f"Moved {generated_pka_file} to {output_file}")
             else:
-                print(f"Error: {generated_pka_file} not found in {current_dir}.")
+                print(f"Error: {generated_pka_file} not found in {current_dir}. Propka may have failed.")
         else:
             print(f"Error running Propka for {pdb_file}: {result.stderr}")
     except FileNotFoundError:

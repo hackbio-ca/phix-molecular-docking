@@ -6,6 +6,19 @@
     <title>Upload Enzyme and Substrate PDB Files</title>
     <!-- Include NGL Viewer JavaScript library -->
     <script src="https://unpkg.com/ngl@2.0.0-dev.34/dist/ngl.js"></script>
+    <style>
+        #overview {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        #error-message {
+            color: red;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Upload Enzyme and Substrate PDB Files</h1>
@@ -22,9 +35,21 @@
         <input type="submit" value="Submit">
     </form>
 
+    <!-- Error message display -->
+    <div id="error-message"></div>
+
+    <!-- Visualization section -->
     <h2>Visualize the Results</h2>
     <div id="viewport" style="width: 600px; height: 400px;"></div>
 
+    <!-- Overview of protonation changes -->
+    <h2>Changes Overview</h2>
+    <div id="overview">
+        <p><strong>pKa and Protonation Sites Overview:</strong></p>
+        <p id="changes-text">The results of the protonation adjustment will be shown here after the file upload.</p>
+    </div>
+
+    <!-- Download button for the ZIP file -->
     <h2>Download Files</h2>
     <button id="download-zip" style="display:none;">Download ZIP File</button>
 
@@ -39,11 +64,13 @@
             });
         }
 
-        // Handle form submission and dynamically load structures from server
+        // Handle form submission and dynamically load structures and changes from the server
         document.querySelector('#upload-form').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the default form submission
 
             var formData = new FormData(this);
+            var errorMessageDiv = document.getElementById('error-message');
+            errorMessageDiv.innerHTML = ''; // Clear any previous error messages
 
             fetch('/upload', {
                 method: 'POST',
@@ -51,15 +78,23 @@
             })
             .then(response => response.json())
             .then(data => {
-                // Load both enzyme and substrate structures in NGL Viewer
-                loadStructure(data.enzyme_output);
-                loadStructure(data.substrate_output);
+                if (data.error) {
+                    // If there's an error (invalid pH), show the error message
+                    errorMessageDiv.innerHTML = data.error;
+                } else {
+                    // Load both enzyme and substrate structures in NGL Viewer
+                    loadStructure(data.enzyme_output);
+                    loadStructure(data.substrate_output);
 
-                // Show the download button and set the link for the ZIP file
-                document.querySelector('#download-zip').style.display = 'block';
-                document.querySelector('#download-zip').onclick = function() {
-                    window.location.href = data.zip_output;
-                };
+                    // Show the download button and set the link for the ZIP file
+                    document.querySelector('#download-zip').style.display = 'block';
+                    document.querySelector('#download-zip').onclick = function() {
+                        window.location.href = data.zip_output;
+                    };
+
+                    // Update the overview with the pKa/protonation changes
+                    document.getElementById('changes-text').innerHTML = data.pKa_changes;
+                }
             })
             .catch(error => console.error('Error:', error));
         });

@@ -1,0 +1,252 @@
+2024-09-29 02:27:34,332 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 02:27:34,332 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 02:27:34,332 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 02:27:34,332 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 02:27:34,332 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 02:27:34,362 INFO:main.py:765:main_driver:Loading molecule: uploads/hemoglobin.pdb
+2024-09-29 02:27:34,373 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 02:27:34,382 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:27:34,382 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:27:34,382 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:27:34,382 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:27:34,383 INFO:main.py:408:setup_molecule:Created biomolecule object with 1027 residues and 4993 atoms.
+2024-09-29 02:27:34,383 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 02:27:34,389 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 02:27:34,395 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 02:27:34,398 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2024-09-29 02:27:34,398 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 02:27:34,399 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 02:27:34,457 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 02:27:34,631 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 02:27:34,938 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 02:27:35,176 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 147 skipped when optimizing H2 in HOH A 199
+2024-09-29 02:27:35,184 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:35,184 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:35,185 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:35,185 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:35,192 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:35,192 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:35,193 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH C 233 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:27:35,194 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 147 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:27:35,194 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2024-09-29 02:27:37,892 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 02:27:37,896 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 02:27:37,897 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 02:27:37,922 WARNING:main.py:311:print_pqr:Ignoring 6586 header lines in output.
+2024-09-29 02:27:37,922 WARNING:main.py:315:print_pqr:Ignoring 172 missing lines in output.
+2024-09-29 02:27:53,233 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 02:27:53,233 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 02:27:53,233 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 02:27:53,233 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 02:27:53,233 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 02:27:53,262 INFO:main.py:765:main_driver:Loading molecule: uploads/hemoglobin.pdb
+2024-09-29 02:27:53,273 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 02:27:53,282 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:27:53,282 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:27:53,282 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:27:53,282 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:27:53,283 INFO:main.py:408:setup_molecule:Created biomolecule object with 1027 residues and 4993 atoms.
+2024-09-29 02:27:53,284 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 02:27:53,290 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 02:27:53,295 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 02:27:53,299 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2024-09-29 02:27:53,299 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 02:27:53,299 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 02:27:53,356 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 02:27:53,532 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 02:27:53,897 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 02:27:54,192 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 147 skipped when optimizing H2 in HOH A 199
+2024-09-29 02:27:54,201 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:54,202 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:54,202 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:54,203 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:54,215 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:54,216 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:27:54,217 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH C 233 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:27:54,218 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 147 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:27:54,219 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2024-09-29 02:27:56,919 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 02:27:56,923 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 02:27:56,924 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 02:27:56,949 WARNING:main.py:311:print_pqr:Ignoring 6586 header lines in output.
+2024-09-29 02:27:56,949 WARNING:main.py:315:print_pqr:Ignoring 172 missing lines in output.
+2024-09-29 02:39:46,044 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 02:39:46,044 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 02:39:46,044 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 02:39:46,044 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 02:39:46,044 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 02:39:46,073 INFO:main.py:765:main_driver:Loading molecule: uploads/hemoglobin.pdb
+2024-09-29 02:39:46,084 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 02:39:46,095 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:39:46,095 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:39:46,096 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:39:46,096 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:39:46,097 INFO:main.py:408:setup_molecule:Created biomolecule object with 1027 residues and 4993 atoms.
+2024-09-29 02:39:46,098 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 02:39:46,105 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 02:39:46,110 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 02:39:46,113 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2024-09-29 02:39:46,113 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 02:39:46,114 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 02:39:46,168 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 02:39:46,344 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 02:39:46,649 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 02:39:46,886 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 147 skipped when optimizing H2 in HOH A 199
+2024-09-29 02:39:46,893 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:39:46,894 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:39:46,894 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:39:46,895 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:39:46,901 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:39:46,902 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:39:46,902 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH C 233 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:39:46,903 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 147 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:39:46,903 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2024-09-29 02:39:49,673 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 02:39:49,678 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 02:39:49,679 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 02:39:49,709 WARNING:main.py:311:print_pqr:Ignoring 6586 header lines in output.
+2024-09-29 02:39:49,709 WARNING:main.py:315:print_pqr:Ignoring 172 missing lines in output.
+2024-09-29 02:40:05,614 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 02:40:05,614 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 02:40:05,614 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 02:40:05,614 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 02:40:05,614 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 02:40:05,647 INFO:main.py:765:main_driver:Loading molecule: uploads/hemoglobin.pdb
+2024-09-29 02:40:05,661 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 02:40:05,670 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:40:05,671 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:40:05,671 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:40:05,671 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:40:05,673 INFO:main.py:408:setup_molecule:Created biomolecule object with 1027 residues and 4993 atoms.
+2024-09-29 02:40:05,673 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 02:40:05,680 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 02:40:05,690 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 02:40:05,694 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2024-09-29 02:40:05,694 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 02:40:05,694 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 02:40:05,756 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 02:40:05,931 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 02:40:06,235 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 02:40:06,476 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 147 skipped when optimizing H2 in HOH A 199
+2024-09-29 02:40:06,484 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:40:06,484 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:40:06,485 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:40:06,485 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:40:06,492 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:40:06,492 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:40:06,493 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH C 233 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:40:06,493 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 147 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:40:06,494 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2024-09-29 02:40:09,095 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 02:40:09,099 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 02:40:09,100 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 02:40:09,125 WARNING:main.py:311:print_pqr:Ignoring 6586 header lines in output.
+2024-09-29 02:40:09,125 WARNING:main.py:315:print_pqr:Ignoring 172 missing lines in output.
+2024-09-29 02:56:37,161 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 02:56:37,162 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 02:56:37,162 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 02:56:37,162 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 02:56:37,162 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 02:56:37,190 INFO:main.py:765:main_driver:Loading molecule: uploads/hemoglobin.pdb
+2024-09-29 02:56:37,201 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 02:56:37,210 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:56:37,210 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:56:37,210 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:56:37,210 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 02:56:37,211 INFO:main.py:408:setup_molecule:Created biomolecule object with 1027 residues and 4993 atoms.
+2024-09-29 02:56:37,211 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 02:56:37,217 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 02:56:37,225 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 02:56:37,228 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2024-09-29 02:56:37,228 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 02:56:37,228 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 02:56:37,283 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 02:56:37,456 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 02:56:37,760 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 02:56:38,012 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 147 skipped when optimizing H2 in HOH A 199
+2024-09-29 02:56:38,020 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:56:38,020 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:56:38,021 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:56:38,022 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:56:38,028 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:56:38,029 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 02:56:38,029 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH C 233 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:56:38,030 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 147 skipped when optimizing H2 in HOH A 214
+2024-09-29 02:56:38,031 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2024-09-29 02:56:40,652 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 02:56:40,656 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 02:56:40,657 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 02:56:40,683 WARNING:main.py:311:print_pqr:Ignoring 6586 header lines in output.
+2024-09-29 02:56:40,683 WARNING:main.py:315:print_pqr:Ignoring 172 missing lines in output.
+2024-09-29 03:28:37,526 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 03:28:37,526 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 03:28:37,526 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 03:28:37,526 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 03:28:37,526 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 03:28:37,556 INFO:main.py:765:main_driver:Loading molecule: uploads/hemoglobin.pdb
+2024-09-29 03:28:37,567 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 03:28:37,575 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 03:28:37,575 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 03:28:37,576 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 03:28:37,576 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 03:28:37,577 INFO:main.py:408:setup_molecule:Created biomolecule object with 1027 residues and 4993 atoms.
+2024-09-29 03:28:37,577 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 03:28:37,583 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 03:28:37,588 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 03:28:37,592 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2024-09-29 03:28:37,592 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 03:28:37,592 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 03:28:37,647 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 03:28:37,823 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 03:28:38,131 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 03:28:38,370 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 147 skipped when optimizing H2 in HOH A 199
+2024-09-29 03:28:38,377 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 03:28:38,378 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 03:28:38,379 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 03:28:38,379 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 03:28:38,386 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 03:28:38,386 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 03:28:38,387 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH C 233 skipped when optimizing H2 in HOH A 214
+2024-09-29 03:28:38,387 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 147 skipped when optimizing H2 in HOH A 214
+2024-09-29 03:28:38,388 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2024-09-29 03:28:41,281 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 03:28:41,287 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 03:28:41,288 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 03:28:41,315 WARNING:main.py:311:print_pqr:Ignoring 6586 header lines in output.
+2024-09-29 03:28:41,315 WARNING:main.py:315:print_pqr:Ignoring 172 missing lines in output.
+2024-09-29 14:37:01,059 INFO:main.py:240:print_splash_screen:PDB2PQR v3.6.1: biomolecular structure conversion software.
+2024-09-29 14:37:01,060 INFO:main.py:242:print_splash_screen:Please cite:  Jurrus E, et al.  Improvements to the APBS biomolecular solvation software suite.  Protein Sci 27 112-128 (2018).
+2024-09-29 14:37:01,060 INFO:main.py:242:print_splash_screen:Please cite:  Dolinsky TJ, et al.  PDB2PQR: expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res 35 W522-W525 (2007).
+2024-09-29 14:37:01,060 INFO:main.py:759:main_driver:Checking and transforming input arguments.
+2024-09-29 14:37:01,060 INFO:main.py:763:main_driver:Loading topology files.
+2024-09-29 14:37:01,089 INFO:main.py:765:main_driver:Loading molecule: uploads/hemoglobin.pdb
+2024-09-29 14:37:01,100 INFO:main.py:770:main_driver:Setting up molecule.
+2024-09-29 14:37:01,108 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 14:37:01,109 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 14:37:01,109 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 14:37:01,109 WARNING:biomolecule.py:992:create_residue:Unable to find amino or nucleic acid definition for HEM.  Parsing as new residue.
+2024-09-29 14:37:01,110 INFO:main.py:408:setup_molecule:Created biomolecule object with 1027 residues and 4993 atoms.
+2024-09-29 14:37:01,110 INFO:main.py:774:main_driver:Setting termini states for biomolecule chains.
+2024-09-29 14:37:01,116 INFO:main.py:604:non_trivial:Loading forcefield.
+2024-09-29 14:37:01,121 INFO:main.py:608:non_trivial:Loading hydrogen topology definitions.
+2024-09-29 14:37:01,124 INFO:main.py:459:is_repairable:This biomolecule is clean.  No repair needed.
+2024-09-29 14:37:01,124 INFO:main.py:623:non_trivial:Updating disulfide bridges.
+2024-09-29 14:37:01,125 INFO:main.py:626:non_trivial:Debumping biomolecule.
+2024-09-29 14:37:01,184 INFO:main.py:649:non_trivial:Adding hydrogens to biomolecule.
+2024-09-29 14:37:01,359 INFO:main.py:652:non_trivial:Debumping biomolecule (again).
+2024-09-29 14:37:01,653 INFO:main.py:654:non_trivial:Optimizing hydrogen bonds
+2024-09-29 14:37:01,890 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP2 in HOH A 147 skipped when optimizing H2 in HOH A 199
+2024-09-29 14:37:01,897 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 14:37:01,898 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 14:37:01,898 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 14:37:01,899 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 14:37:01,905 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 14:37:01,906 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: LP1 in HOH A 147 skipped when optimizing H2 in HOH A 241
+2024-09-29 14:37:01,906 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH C 233 skipped when optimizing H2 in HOH A 214
+2024-09-29 14:37:01,907 WARNING:debump.py:354:get_closest_atom:Skipped atom during water optimization: H2 in HOH A 147 skipped when optimizing H2 in HOH A 214
+2024-09-29 14:37:01,907 WARNING:io.py:40:filter:Suppressing further "Skipped atom during water optimization" messages
+2024-09-29 14:37:04,511 INFO:main.py:666:non_trivial:Applying force field to biomolecule states.
+2024-09-29 14:37:04,515 INFO:main.py:713:non_trivial:Regenerating headers.
+2024-09-29 14:37:04,516 INFO:main.py:738:non_trivial:Regenerating PDB lines.
+2024-09-29 14:37:04,541 WARNING:main.py:311:print_pqr:Ignoring 6586 header lines in output.
+2024-09-29 14:37:04,541 WARNING:main.py:315:print_pqr:Ignoring 172 missing lines in output.
