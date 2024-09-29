@@ -25,6 +25,9 @@
     <h2>Visualize the Results</h2>
     <div id="viewport" style="width: 600px; height: 400px;"></div>
 
+    <h2>Download Files</h2>
+    <button id="download-zip" style="display:none;">Download ZIP File</button>
+
     <!-- JavaScript to handle file upload and load NGL Viewer -->
     <script>
         // Function to load PQR structure in NGL Viewer
@@ -51,6 +54,12 @@
                 // Load both enzyme and substrate structures in NGL Viewer
                 loadStructure(data.enzyme_output);
                 loadStructure(data.substrate_output);
+
+                // Show the download button and set the link for the ZIP file
+                document.querySelector('#download-zip').style.display = 'block';
+                document.querySelector('#download-zip').onclick = function() {
+                    window.location.href = data.zip_output;
+                };
             })
             .catch(error => console.error('Error:', error));
         });
