@@ -21,55 +21,67 @@ Thus, by bridging the gap between experimental structural data and desired simul
 
 4- Onufriev, A. V., & Alexov, E. (2013). PROTONATION AND PK CHANGES IN PROTEIN–LIGAND BINDING. Quarterly Reviews of Biophysics, 46(2), 181–209. https://doi.org/10.1017/S0033583513000054
 
-## Installation
 
-Provide instructions on how to install and set up the project, such as installing dependencies and preparing the environment.
+
+## Requirements
+
+- Python 3.x
+- Conda (package manager)
+
+## Installation and Setup
+
+### Step 1: Clone the Repository
 
 ```bash
-# Example command to install dependencies (Python)
-pip install project-dependencies
-
-# Example command to install dependencies (R)
-install.packages("project-dependencies")
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
 
-## Quick Start
+### Step 2: Set Up Conda Environment
 
-Provide a basic usage example or minimal code snippet that demonstrates how to use the project.
-
-```python
-# Example usage (Python)
-import my_project
-
-demo = my_project.example_function()
-print(demo)
-```
-```r
-# Example usage (R)
-library(my_project)
-
-demo <- example_function()
-print(demo)
+```bash
+conda create -n bioinfo-env python=3.8
+conda activate bioinfo-env
 ```
 
-## Usage
+### Step 3: Install Python Dependencies
 
-Add detailed information and examples on how to use the project, covering its major features and functions.
-
-```python
-# More usage examples (Python)
-import my_project
-
-demo = my_project.advanced_function(parameter1='value1')
-print(demo)
+```bash
+pip install -r requirements.txt
 ```
-```r
-# More usage examples (R)
-library(demoProject)
 
-demo <- advanced_function(parameter1 = "value1")
-print(demo)
+### Step 4: Install External Tools
+
+```bash
+conda install -c conda-forge propka pdb2pqr openbabel
 ```
+
+Verify installations:
+
+```bash
+propka3 --version
+pdb2pqr --version
+obabel --version
+```
+
+## Running the App
+
+```bash
+python app.py
+```
+
+Open your browser at `http://127.0.0.1:5000`.
+
+## Using the Web App
+
+1. **Upload Files**: Upload enzyme and substrate PDB files.
+2. **Enter pH**: Input pH value (0-14). Invalid pH values will display an error.
+3. **Process**: The app will compute pKa and adjust protonation states.
+4. **Download Files**: Download the adjusted files as a ZIP package.
+
+
+
+
 
 ## Contribute
 
