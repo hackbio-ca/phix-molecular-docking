@@ -1,4 +1,4 @@
-# pHix
+# pHix molecular docking 
 A pH-Adaptive Protein-Ligand Simulation Tool to Enhance Molecular Docking Accuracy
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
