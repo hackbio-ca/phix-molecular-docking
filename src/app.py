@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, send_file
 import os
 import subprocess
+import zipfile
 
 app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads/'
@@ -30,19 +31,19 @@ def upload_file():
         substrate_file.save(substrate_path)
 
         # Run Propka and adjust protonation
-        adjust_protonation(enzyme_path, substrate_path, ph)
-
-        # Return modified PDB files to the user
         enzyme_output, substrate_output = adjust_protonation(enzyme_path, substrate_path, ph)
 
-        # Check if the output file exists before sending
-        if os.path.exists(enzyme_output):
-            return send_file(enzyme_output, as_attachment=True)
-        else:
-            return f"File {enzyme_output} not found", 404
-    
-        return send_file(enzyme_output, as_attachment=True)  
+        # Create a ZIP file with both outputs
+        zip_path = os.path.join(OUTPUT_FOLDER, 'adjusted_files.zip')
+        with zipfile.ZipFile(zip_path, 'w') as zipf:
+            zipf.write(enzyme_output, os.path.basename(enzyme_output))
+            zipf.write(substrate_output, os.path.basename(substrate_output))
 
+        # Send the ZIP file to the user
+        if os.path.exists(zip_path):
+            return send_file(zip_path, as_attachment=True)
+        else:
+            return f"File {zip_path} not found", 404
 
 def adjust_protonation(enzyme_pdb, substrate_pdb, ph):
     enzyme_output = os.path.join(OUTPUT_FOLDER, 'adjusted_' + os.path.basename(enzyme_pdb).replace('.pdb', '.pqr'))
@@ -67,10 +68,6 @@ def adjust_protonation(enzyme_pdb, substrate_pdb, ph):
         raise
 
     return enzyme_output, substrate_output  # Return the paths to the adjusted PQR files
-
-
-
-
 
 if __name__ == "__main__":
     app.run(debug=True)
