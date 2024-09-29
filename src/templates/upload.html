@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upload Enzyme and Substrate PDB Files</title>
+    <!-- Include NGL Viewer JavaScript library -->
     <script src="https://unpkg.com/ngl@2.0.0-dev.34/dist/ngl.js"></script>
 </head>
 <body>
     <h1>Upload Enzyme and Substrate PDB Files</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
+    <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
         <label for="enzyme">Enzyme PDB file:</label><br>
         <input type="file" name="enzyme" id="enzyme" required><br><br>
+
         <label for="substrate">Substrate PDB file:</label><br>
         <input type="file" name="substrate" id="substrate" required><br><br>
+
         <label for="ph">Desired pH:</label><br>
         <input type="text" name="ph" id="ph" required><br><br>
+
         <input type="submit" value="Submit">
     </form>
 
     <h2>Visualize the Results</h2>
     <div id="viewport" style="width: 600px; height: 400px;"></div>
 
+    <!-- JavaScript to handle file upload and load NGL Viewer -->
     <script>
+        // Function to load PQR structure in NGL Viewer
         function loadStructure(url) {
             var stage = new NGL.Stage("viewport");
             stage.loadFile(url).then(function (component) {
@@ -30,8 +36,24 @@
             });
         }
 
-        // Example: Load the modified enzyme structure
-        loadStructure('/path/to/adjusted_enzyme.pqr');  // Dynamically change based on the uploaded file
+        // Handle form submission and dynamically load structures from server
+        document.querySelector('#upload-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var formData = new FormData(this);
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Load both enzyme and substrate structures in NGL Viewer
+                loadStructure(data.enzyme_output);
+                loadStructure(data.substrate_output);
+            })
+            .catch(error => console.error('Error:', error));
+        });
     </script>
 </body>
 </html>
