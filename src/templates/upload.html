@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Enzyme and Substrate PDB Files</title>
+</head>
+<body>
+    <h1>Upload Enzyme and Substrate PDB Files</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="enzyme">Enzyme PDB file:</label><br>
+        <input type="file" name="enzyme" id="enzyme" required><br><br>
+        <label for="substrate">Substrate PDB file:</label><br>
+        <input type="file" name="substrate" id="substrate" required><br><br>
+        <label for="ph">Desired pH:</label><br>
+        <input type="text" name="ph" id="ph" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
