@@ -1,6 +1,8 @@
 # pHix Molecular Docking
 A pH-Adaptive Protein-Ligand Simulation Tool to Enhance Molecular Docking Accuracy
 
+** Toronto Bioinformatics Hackathon, 2024**
+
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Abstract
